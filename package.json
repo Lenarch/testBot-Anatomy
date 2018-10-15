@@ -4,7 +4,7 @@
   "description": "Test",
   "main": "Anatomy.js",
   "scripts": {
-    "start": " node Anatomy.js"
+    "start": "node Anatomy.js"
   },
 
   "dependencies": {
