@@ -20,8 +20,6 @@ var voiceChannel = null;
 var skipReq = 0;
 varskippers = [];
 
-client.login(discord_token);
-
 client.on('ready', function () {
     console.log("I am Reydi!");
 });
