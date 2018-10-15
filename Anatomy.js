@@ -6,13 +6,6 @@ const fs =require("fs");
 const getYouTubeID = require("get-youtube-id");
 const fetchVideoInfo = require("yourtube-info");
 
-var config = JSON.parse(fs.readFileSync('./settings.json', 'utf-8'));
-
-const yt_api_key = config.yt_api_key;
-const bot_controller = config.bot_controller;
-const prefix = config.prefix;
-const discord_token = config.discord_token;
-
 var queue = [];
 var isPlaying = false;
 var dispatcher = null;
@@ -102,3 +95,4 @@ function isYoutube(str) {
 }  
 
 client.login(process.env.BOT_TOKEN);
+yt_api_key.login(process.env.YT_API_KEY)
